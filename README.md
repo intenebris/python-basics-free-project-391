@@ -20,23 +20,6 @@
 ```
 python main.py
 ```
-
-
-Учебный проект Хекслета: https://ru.hexlet.io/programs/python-basics-free
-
-
-## Стек
-
-- Разное
-
-## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
-
-```bash
-git clone https://github.com/intenebris/python-basics-free-project-391.git
-cd python-basics-free-project-391
-```
 # Примеры вывода
 Для примера и теста используем этот скрипт:
  ```
@@ -62,6 +45,20 @@ abcdef1234 -> Средний пароль (оценка 3 из 5)
 Abcdef123! -> Очень надёжный пароль (оценка 5 из 5)
 ```
 ### Всем удачи и хорошего кодинга! ;-)
+
+Учебный проект Хекслета: https://ru.hexlet.io/programs/python-basics-free
+
+
+## Стек
+
+- Python
+
+## Установка
+
+```bash
+git clone https://github.com/intenebris/python-basics-free-project-391.git
+cd python-basics-free-project-391
+```
 
 ---
 
