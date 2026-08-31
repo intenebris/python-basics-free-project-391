@@ -49,7 +49,7 @@ def check_password(password: str = "") -> str:
         return f"Надёжный пароль (оценка {score} из 5)"
     elif score == 3:
         return f"Средний пароль (оценка {score} из 5)"
-    elif score < 3 and score > 0:
+    elif score < 3:
         return f"Слабый пароль (оценка {score} из 5)"
     else:
         return f"Некорректные данные"
