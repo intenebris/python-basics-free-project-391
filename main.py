@@ -25,7 +25,6 @@ def generate_password(length: int, seed: int, use_uppercase=True, use_digits=Tru
     return result
 
 def check_password(password: str = "") -> str:
-    result = ""
     score = 0
     isnum = False
     issymbol = False
@@ -62,11 +61,21 @@ def check_password(password: str = "") -> str:
 # print(generate_password(length=-3, seed=42))
 # print(generate_password(length=18, seed=4, use_special=True))
 
-print(check_password("abc"))
-print(check_password("abcdefgh"))
-print(check_password("abcdef1234"))
-print(check_password("Abcdef1234"))
-print(check_password("Abcdef123!"))
-print(check_password("Abcdef123_"))
-print(check_password(""))
-print(check_password())
+# print(check_password("abc"))
+# print(check_password("abcdefgh"))
+# print(check_password("abcdef1234"))
+# print(check_password("Abcdef1234"))
+# print(check_password("Abcdef123!"))
+# print(check_password("Abcdef123_"))
+# print(check_password(""))
+# print(check_password())
+
+print("== Генерация паролей ==")
+print("буквы и цифры:   ", generate_password(length=12, seed=123))
+print("со спецсимволами:", generate_password(length=16, seed=7, use_special=True))
+
+print()
+print("== Проверка надёжности ==")
+print("abc        ->", check_password("abc"))
+print("abcdef1234 ->", check_password("abcdef1234"))
+print("Abcdef123! ->", check_password("Abcdef123!"))
